@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow | تسجيل الدخول</title>
+    <link rel="stylesheet" href="stylee_pro.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+
+        <main class="auth-stage">
+            <section id="authContainer" class="container card-panel auth-card">
+                <div class="panel-head centered">
+                    <span class="panel-badge">TaskFlow</span>
+                    <h1>تسجيل الدخول أو إنشاء حساب</h1>
+                    <p>الصفحة الأساسية تعرض فقط واجهة تسجيل الدخول وإنشاء الحساب.</p>
+                </div>
+
+                <div class="input-group auth-fields">
+                    <div class="field">
+                        <label for="emailInput">البريد الإلكتروني</label>
+                        <input type="email" id="emailInput" placeholder="name@example.com" />
+                    </div>
+                    <div class="field">
+                        <label for="passwordInput">كلمة المرور</label>
+                        <input type="password" id="passwordInput" placeholder="••••••••" />
+                    </div>
+                </div>
+
+                <div class="action-row two-cols">
+                    <button id="loginBtn">تسجيل الدخول</button>
+                    <button id="signupBtn" class="secondary-btn">إنشاء حساب</button>
+                </div>
+            </section>
+
+            <section id="todoContainer" class="container card-panel todo-card hidden">
+                <div class="panel-head">
+                    <div>
+                        <span class="panel-badge">لوحة المهام</span>
+                        <h2>مهامي</h2>
+                        <p>تابع مهامك اليومية وأنجزها بسهولة.</p>
+                    </div>
+                    <button id="logoutBtn" class="secondary-btn">خروج</button>
+                </div>
+
+                <div class="stats-container">
+                    <div>
+                        <span class="muted-label">الحالة الحالية</span>
+                        <p id="taskCount">0 مهام متبقية</p>
+                    </div>
+                </div>
+
+                <div class="composer">
+                    <div class="field grow">
+                        <label for="taskInput">مهمة جديدة</label>
+                        <input type="text" id="taskInput" placeholder="اكتب مهمتك هنا..." />
+                    </div>
+                    <button id="addTaskBtn">إضافة</button>
+                </div>
+
+                <ul id="taskList" class="task-list"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="fun.js"></script>
+</body>
+</html>
